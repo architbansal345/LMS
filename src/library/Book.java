@@ -21,7 +21,7 @@ abstract class Book  implements  Lendable{
         this.title = other.title;
         this.isbn = other.isbn;
     }
-    public boolean Lend(User user){
+    public boolean lend(User user){
         if(isAvailable && user.canBorrowBooks()){
             isAvailable = false;
             return true;
